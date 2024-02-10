@@ -40,7 +40,11 @@ bin/$(MODULE): $(D) $(J) Makefile
 
 # doc
 .PHONY: doc
-doc:
+doc: \
+	doc/Godot-Game-Development-for-Beginners.pdf
+
+doc/Godot-Game-Development-for-Beginners.pdf:
+	$(CURL) $@ https://gamedevacademy.org/wp-content/uploads/2020/07/Godot-Game-Development-for-Beginners.pdf &
 
 # install
 .PHONY: install update gz ref
