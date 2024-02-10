@@ -41,8 +41,11 @@ bin/$(MODULE): $(D) $(J) Makefile
 # doc
 .PHONY: doc
 doc: \
+	doc/Packt_Godot-4-Game-Development-Cookbook.pdf \
 	doc/Godot-Game-Development-for-Beginners.pdf
 
+doc/Packt_Godot-4-Game-Development-Cookbook.pdf:
+	$(CURL) $@ https://static.packt-cdn.com/downloads/9781838826079_ColorImages.pdf
 doc/Godot-Game-Development-for-Beginners.pdf:
 	$(CURL) $@ https://gamedevacademy.org/wp-content/uploads/2020/07/Godot-Game-Development-for-Beginners.pdf &
 
