@@ -1,1 +1,6 @@
-../rc
+#!/bin/sh
+git checkout tmp &
+code . &
+# git gui &
+godot3 &
+git pull -v
