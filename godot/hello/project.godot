@@ -19,6 +19,14 @@ config/name="hello"
 run/main_scene="res://ui.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=240
+window/size/height=320
+window/size/resizable=false
+window/size/always_on_top=true
+window/handheld/orientation="portrait"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
